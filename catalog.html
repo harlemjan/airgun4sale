@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		
+		<title> Airgun </title>
+		<style>
+
+		h2,h4{
+		font-family: calibri;
+		text-align: center;		
+		}
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body {margin: 0;}
+
+ul.sidenav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+ul.sidenav li a {
+  display: block;
+  color: #000;
+  padding: 1px 1px;
+  text-decoration: none;
+  
+}
+ 
+ul.sidenav li a.active {
+  background-color: #4CAF50;
+  color: white;
+  
+}
+
+ul.sidenav li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 25%;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 900px) {
+  ul.sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  ul.sidenav li a {
+    float: left;
+    padding: 15px;
+  }
+  
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  ul.sidenav li a {
+    text-align: center;
+    float: none;
+}
+}
+#myBtn {
+			
+			max-width: 100px;
+			width: 100%;
+			font-size: 15px;
+			border-color: rgba(85, 85, 85, 0.2);
+			background-color: #3b9c76;
+			padding: 10px;
+			border-radius: 4px;
+			}
+			#myBtn:hover {
+			background-color: #47fcb5;
+			}
+			.button{
+			text-align: center;
+			}
+		
+
+
+</style>
+</head>
+<body>
+
+<ul class="sidenav">
+  <li><a class="active" href="#home"><h4>Home</h4></a></li>
+  <li><a href="#contact"><h4>Contact</h4></a></li>
+  <li><a href="#about"><h4>About</h4></a></li>
+</ul>
+
+<h2>Airgun</h2>
+<h4>brrt brrt</h4>
+<br><br><br><br>
+<div class="content">
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="ak.jpg">
+      <img src="ak.jpg" alt="Cinque Terre" width="10" height="10">
+    </a>
+    <div class="desc">ak</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="m4.jpg">
+      <img src="m4.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">m416</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="kar.png">
+      <img src="kar.png" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">kar98k</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="scar.jpg">
+      <img src="scar.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Scar-L</div>
+  </div>
+</div>
+
+
+
+<div class="clearfix"></div>
+<br>
+<hr style="width:100%">
+<div style="padding:5px;">
+  <h4>Bili na kayo.</h4>
+  <h4>mga lude</h4>
+  <h4><button id="myBtn"><a href="#top" style="color: white">back to top</a></button></h4>
+</div>
+</div>
+</body>
+</html>
